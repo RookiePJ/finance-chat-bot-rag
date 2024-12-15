@@ -8,7 +8,7 @@ import { useRef, useEffect } from 'react'
 export function Chat() {
 
     const { messages, input, handleInputChange, handleSubmit } = useChat({
-        api: 'api/ex4',
+        api: 'api/finance',
         onError: (e) => {
             console.log(e)
         }
@@ -26,7 +26,7 @@ export function Chat() {
         <main className="flex flex-col w-full h-screen max-h-dvh bg-background">
 
             <header className="p-4 border-b w-full max-w-3xl mx-auto">
-                <h1 className="text-2xl font-bold">LangChain Chat</h1>
+                <h1 className="text-2xl font-bold">Finance AI Chat</h1>
             </header>
 
             <section className="p-4">

@@ -1,32 +1,11 @@
-# Build a RAG Application
-## With LangChain & Next.js
----
+# Finance Chat Bot with RAG 
+Note - original base code forked from 'Build a RAG Application' by David Grey
+(https://github.com/gitdagray/nextjs-rag-langchain)
 
-### Author Links
-
-👋 Hello, I'm Dave Gray.
-
-📚 [My Courses](https://courses.davegray.codes/)
-
-✅ [Check out my YouTube Channel with hundreds of tutorials](https://www.youtube.com/DaveGrayTeachesCode).
-
-🚩 [Subscribe to my channel](https://bit.ly/3nGHmNn)
-
-💖 [Support My Content](https://patreon.com/davegray)
-
-🚀 Follow Me:
-
-- [Twitter](https://twitter.com/yesdavidgray)
-- [LinkedIn](https://www.linkedin.com/in/davidagray/)
-- [Blog](https://davegray.codes)
-
+## Using LangChain & Next.js
 ---
 
 ### Description
-
-📺 [YouTube Video](https://youtu.be/YLagvzoWCL0) for this repository.
-
----
 
 ### ⚙ Usage
 
@@ -34,15 +13,24 @@
 - npm install
 - npm run dev
 
----
+#To Do
+- [X] Install and run locally
+- [X] Run with OpenAI
+- [ ] Create RAG finance json data (other project) 
+- [ ] Adapt to load finance data
+- [ ] Amend to work locally with the text-generation-webui api 
+
+
+### David Greys Author Links
+
+📺 [YouTube Video](https://youtu.be/YLagvzoWCL0) for this repository.
+✅ [Check out my YouTube Channel with hundreds of tutorials](https://www.youtube.com/DaveGrayTeachesCode).
 
 ### 🎓 Academic Honesty
+Original base code was forked from David Grey's repository. 
+Code changes have (will be) made to suit another project
 
-**DO NOT COPY FOR AN ASSIGNMENT** - Avoid plagiarism and adhere to the spirit of this [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/).
-
----
-
-### 📚 Tutorial References
+### References
 
 - 🔗 [LangChain JS/TS Docs](https://js.langchain.com/docs/get_started/introduction)
 - 🔗 [Next.js](https://nextjs.org/)
