@@ -1,0 +1,90 @@
+[
+  {
+    "term": "blockchain",
+    "description": "A bockchain is basically a consensus-based digital ledger that includes immutable, digital data, documented in different packages known as blocks. Every block is ‘chained’ or related to the next block by leveraging a cryptographic signature or hash function. Thus, blockchain serves as a ledger that you can share with anyone. It is open for access to people with the relevant permissions. It is impossible to change the data recorded on blocks in the blockchain."
+  },
+  {
+    "term": "block",
+    "description": "Data is documented permanently on the blockchain network with the help of files referred to as blocks. Block is basically a record of some or all the recent transactions on the blockchain network that have not been added to the network. New blocks are added to the blockchain, and they are not vulnerable to any unwanted modifications. Every block includes information about the recent transactions with reference to the previous block in the blockchain."
+  },
+  {
+    "term": "distributed ledger",
+    "description": "The distributed ledger is a type of database or system of record which you can share, replicate, as well as synchronize across different members in a network. The distributed ledger helps in documenting transactions like the exchange of data or assets between network participants. It also helps in eliminating the time and expense associated with the reconciliation of disparate ledgers. Consensus regarding updates to records helps network participants in ensuring governance."
+  },
+  {
+    "term": "consensus",
+    "description": "Consensus is the collaborative effort required from members of a blockchain network to verify the validity of transactions. Consensus is essential in blockchain networks for maintaining consistent synchronization of the ledger. Participants have to agree on a specific transaction and verify its validity before it gets permanently documented in the ledger. Network participants can use consensus to establish rules to facilitate the verification of transactions. Consensus mechanisms are crucial for reducing fraudulent transactions."
+  },
+  {
+    "term": "smart contract",
+    "description": "Just like usual contracts in the real world, smart contracts are helpful for agreements in the blockchain space. Smart contracts are vital tools for the governance of interactions with the ledger. Most importantly, they enable network participants to execute specific parts of transactions without manual interventions. For example, smart contracts could help in stipulating the changes in the cost of shipping according to the arrival time without any underlying complications or setbacks"
+  },
+  {
+    "term": "nodes",
+    "description": "Nodes are one of the fundamental aspects required for the operations of blockchain technologies, systems, and networks. They are the distributed computers required for the operations of the blockchain network. Every node in the network has a copy of the whole blockchain. The addition of new users in the blockchain network ensures the distribution of copies of blockchain and access to the blockchain. The data on each node is replicable and could be synchronized and shared throughout all nodes"
+  },
+  {
+    "term": "address",
+    "description": "Address, also known as a wallet address, is a long string of alphanumeric characters. The address is a significant requirement for sending, receiving, or holding currency. A blockchain user needs two encrypted keys, such as a public key and a private key, to confirm a transaction. The address for a specific blockchain transaction is public, and users need the private key to verify the validity of transactions. Interestingly, the address could also be available as QR codes"
+  },
+  {
+  "term": "proof of work",
+  "description": "Proof of Work is a consensus algorithm and the most common one at that, used primarily for the Bitcoin blockchain. Proof of Work algorithm ensures that the first miner presenting the ‘proof of work’ for a block gets the opportunity to validate it. Users can generate POWs by repeatedly inserting transaction data and random strings of digits into a formula. Other miners could verify the POW by applying the concerned input in the formulae"
+  },
+  {
+  "term": "hashing",
+  "description": "Hashing is a crucial procedure in a blockchain network repeated frequently by miners. The use of hashing on a Proof of Work blockchain constantly can help in finding a suitable signature. A hash is a function capable of taking an input and rendering output in the form of an alphanumeric string you can identify as the hash value. Every block has a hash value responsible for validating the previous transaction and its own hash value"
+  },
+  {
+  "term": "double spend",
+  "description": "Double spending is one of the critical issues that blockchain resolves with its basic functionalities and design. The incident of double-spending basically involves a specific user in the blockchain network sending a particular transaction to different recipients simultaneously. Blockchain ensures verification of every transaction, thereby minimizing the risk of double-spending. With subsequent confirmations being added for a specific transaction, the possibility for double-spending in the case of a specific blockchain transaction reduces considerably."
+  },
+  {
+  "term": "digital signature",
+  "description": "he term digital signature is a representation of the conventional paper-based signature. In the case of blockchain, digital signatures refer to the private keys which are essential for signing transactions on the blockchain. Every transaction sent across the blockchain has the signature of the private key of the user. Subsequently, broadcasting the signed transaction over the network with the relevant public key ensures accessibility. Miners could use public keys for signature verification"
+  },
+  {
+  "term": "cryptography",
+  "description": "Cryptography basically points out the method used for secure communication through the use of code. Many blockchain networks use symmetric-key cryptography to ensure the flexible and easier transfer of cryptocurrencies. The blockchain addresses, tailored for individual wallets, are paired with private keys to enable blockchain transactions. The pairing of public and private keys is essential for unlocking blockchain transactions. Asymmetric-key cryptography depends on a secret private key for message encryption and decryption"
+  },
+  {
+  "term": "decentralized application",
+  "description": "A decentralized application or dApp is an open-source application capable of autonomous operations without any entity having control over the majority of its tokens. The application data, alongside records of information, are stored cryptographically in a public, decentralized blockchain, to avoid central points of failure. Decentralized apps use cryptographic tokens to access the application, alongside generating tokens on the basis of a standard cryptographic algorithm, serving as an indicator of the value contributed by nodes to the application"
+  },
+  {
+  "term": "token",
+  "description": "A token is a digital representation for any entity that could be owned. Traditionally, tokens have been identified as meta-information that you can find encoded in basic blockchain transactions, capitalizing on the immutability in the blockchain. In the case of Bitcoin, tokens worked as outsourced extensions to core protocol at the protocol layer. Modern tokens feature complicated smart contract systems alongside permission systems and associated interaction paths. Tokens are subject to governance through a specific set of rules"
+  },
+  {
+  "term": "ethereum",
+  "description": "Ethereum is an open-source blockchain platform that helps developers write smart contracts. It is also the ideal choice for developing and deploying decentralized applications or dApps. Ethereum uses its native token, Ether, as payments for miners, transaction fees, and other network services. The Ethereum Virtual Machine, or EVM, on Ethereum is capable of running on the Ethereum network, alongside enabling any individual to run any blockchain application with ease"
+  },
+  {
+  "term": "rollups",
+  "description": "Rollups are basically a specific variant of layer 2 scaling solutions for batching multiple transactions and submitting them to the Ethereum main chain during a specific transaction. Rollups help in reducing the costs of gas alongside improving transaction throughput. The two distinct types of rollups include zero-knowledge rollups and optimistic rollups. Both types of rollups use unique security approaches for ensuring access to desired scalability improvement that boosts capacity"
+  },
+  {
+    "term": "ethereum virtual machine",
+    "description": "Ethereum Virtual Machine, or EVM, is the stack-based virtual machine that executes bytecode. The execution model is a significant element in Ethereum for specifying the approaches for modification in system state with a specific set of bytecode instructions. In addition, the execution model also considers a small tuple of environmental data for executing bytecode. A formal model for a virtual state machine helps in specifying the instructions and tuple"
+  },
+  {
+    "term": "gas",
+    "description": "Gas is a fundamental requirement for different operations on the Ethereum network. It is basically the virtual fuel implemented in Ethereum for executing smart contracts. The Ethereum Virtual Machine, or EVM, employs a special accounting mechanism for monitoring the consumption of gas. In addition, EVM also works productively to impose restrictions on the consumption of different computing resources. Gas is just like the fuel you need to operate on the Ethereum blockchain."
+  },
+  {
+    "term": "ether",
+    "description": "The fundamental cryptocurrency of the Ethereum ecosystem, Ether, or ETH, is mandatory to compensate for gas costs during the execution of transactions. Ether is the foundation element of Ethereum and is important for sending ETH or using an Ethereum application. Users have to pay the transaction fee as an incentive to miners for their work in processing and verifying the user’s transactions. Ether can be used for different applications seamlessly"
+  },
+  {
+    "term": "non fungible token",
+    "description": "Non-fungible token (NFT) refers to a particular variant of cryptographic token which serves as a representative of a unique asset. NFTs are generally the tokenized representations of digital, as well as real-world, assets. They can also work perfectly as verifiable proofs for the authenticity of assets such as digital art and collectibles. NFTs also provide a clear trail of ownership of assets throughout their lifetime with a lack of interchangeability"
+  },
+  {
+    "term": "defi",
+    "description": "Decentralized Finance (DeFi) is actually just a combination of smart contracts operating independently on blockchains like the Ethereum network. The focus of DeFi primarily turns towards improvements in profitability for investors in the DeFi landscape. With the help of automated smart contracts, DeFi solutions can improve the yields for all investments. The faster growth of innovative ideas, alongside testing of new concepts frequently, has influenced the DeFi ecosystem profoundly"
+  },
+  {
+    "term": "dao",
+    "description": "Distributed Autonomous Organization, or DAO, is basically an organization represented as a computer program with improved transparency and control of the organization members. DAO does not have any influence on the central government. The financial transaction record and documentation of program rules for a DAO are found on a blockchain. Proper DAO implementations can enable real-world experiments with decentralized democratic control and organization. DAO can also ensure freedom of action"
+  }
+]
