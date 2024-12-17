@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Bitcoin",
+        "ticker": "BTC",
+        "type": "cryptocurrency",
+        "nickname": "Digital Gold",
+        "current_price": 2,
+        "start_price": 1,
+        "start_date": 2009,
+        "summary": "The first cryptocurrency created by xxxxxxx",
+        "whitepaper": "url"
+    },
+    {
+        "name": "Ethereum",
+        "ticker": "ETH",
+        "type": "cryptocurrency",
+        "nickname": "Programmable Money",
+        "current_price": 2,
+        "start_price": 1,
+        "start_date": 2012,
+        "summary": "The first programmable cryptocurrency created by Valtaik ",
+        "whitepaper": "url"
+    },
+    {
+        "name": "Polkadot",
+        "ticker": "DOT",
+        "type": "cryptocurrency",
+        "nickname": "Programmable POW parachains",
+        "current_price": 2,
+        "start_price": 1,
+        "start_date": 2014,
+        "summary": "The utility cryptocurrency created by Gavin Wood",
+        "whitepaper": "url"
+    }
+]
