@@ -27,13 +27,20 @@ answer user questions containing blockchain related terms in order to provide de
 ### To Do
 - [X] Install and run locally
 - [X] Run with OpenAI
-- [X] Create RAG crypto glossary document.
+- [X] Create RAG crypto glossary document
+- [X] Crate new route to receive an answer from the model using the RAG document
+- [X] Amend the text on various web pages 
 - [X] Do basic End to End testing (no idea how to write unit or integration tests!)
-- [X] Document
+- [X] Document the new code (old school, old habits die hard!)
+- [X] Create/Amend project documentation (this document)
 - [ ] TODO Amend to work locally with the text-generation-webui api 
 - [ ] TODO Add the ability to process PDF documents, turn them into a langchain vector
 
-### Using LangChain & Next.js
+### Technologies used 
+- Next.js
+- OpenAI with RAG
+- Langchain
+- SeleniumIDE
 
 ### David Greys Author Links
 
