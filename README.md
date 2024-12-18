@@ -4,30 +4,34 @@ Note and disclaimer - this project is based on the original code forked from 'Bu
 
 ### Description
 A simple AI chatbot which will use retrieval augmented generation to 
-answer user question based around blockchain terms.  
+answer user questions containing blockchain related terms in order to provide descriptions of those terms.  
 
 ### Simple Use Case
-#### Overview: As a user I want to be able to find the definition of various blockchain terms.
+#### Overview: As a user I want to be able to find the definition of a blockchain term.
 
 - When I enter a term that is used in the blockchain/web3/cryptocurrency content I want to be provided with its basic definition.
 - If the term is found within the loaded RAG document then that definition will be provided to the model in order to give the user an answer
 - If the term is not found within the RAG document then the answer will be provided by the model 
 - Any other unrelated will be answered by the model. 
 
-### ⚙ Usage
-
+### ⚙ Usage and setup
+#### Setup and configuration
+- Clone the repository  
 - Provide your own .env.local file with an OpenAI API key (OPENAI_API_KEY=<YOUR API KEY>)
-- npm install
-- npm run dev
+- Install dependencies using the command: npm install
+
+#### To run the web applicaion locally
+- Run the application using the command: run: npm run dev
+- Open a web browser at the following address:  http://localhost:3000
 
 ### To Do
 - [X] Install and run locally
 - [X] Run with OpenAI
 - [X] Create RAG crypto glossary document.
-- [ ] Do basic End to End testing (no idea how to write unit or integration tests!)
+- [X] Do basic End to End testing (no idea how to write unit or integration tests!)
 - [X] Document
-- [ ] Amend to work locally with the text-generation-webui api 
-- [ ] Add the ability to process PDF documents, turn them into a langchain vector
+- [ ] TODO Amend to work locally with the text-generation-webui api 
+- [ ] TODO Add the ability to process PDF documents, turn them into a langchain vector
 
 ### Using LangChain & Next.js
 
