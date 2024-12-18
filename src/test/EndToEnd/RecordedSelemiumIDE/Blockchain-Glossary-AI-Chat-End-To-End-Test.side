@@ -1,0 +1,550 @@
+{
+  "id": "f1bd802f-8bd9-490b-a01d-a27b5971b448",
+  "version": "2.0",
+  "name": "Blockchain-Glossary-AI-Chat-End-To-End-Test",
+  "url": "http://localhost:3000",
+  "tests": [{
+    "id": "06767d3a-74bb-4cd2-b02a-2bf1a9819af7",
+    "name": "Simple-Test-Of-Both-Rag-and-Non-Rag-Questions",
+    "commands": [{
+      "id": "43e2d6ec-78fb-4b6d-8815-ca3cb8a99092",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9140f1c0-4c62-42c4-b565-5def07881ded",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1062x802",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0188f6b6-a8aa-489c-aeaf-4709eb22a1b6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "706fded3-3b62-404b-8695-7e4d988dbc98",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is Ether?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "What is Ether?"
+    }, {
+      "id": "032dc86a-45e5-4a57-86bc-b2176b092405",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inline-flex",
+      "targets": [
+        ["css=.inline-flex", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f3a654e-c9bc-440b-888f-cf70e14e720e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7b5a25a-dc92-4185-8bd0-c26863cb7df5",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is a blockchain?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "What is a blockchain?"
+    }, {
+      "id": "d3854812-ea52-42cb-ab8a-c5614db58196",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inline-flex",
+      "targets": [
+        ["css=.inline-flex", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5409bea-b8d8-4ca1-8334-6b82f3dfb461",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c01c1271-926d-4e8a-973d-17447871617a",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is a DAO?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "What is a DAO?"
+    }, {
+      "id": "1d50bc32-05cb-4924-8c3f-6e5fb01c77d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inline-flex",
+      "targets": [
+        ["css=.inline-flex", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "585b0f7f-0b11-4c2f-bfb7-c8814f1e39fa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2fee4cac-68b8-4be8-9816-df451d62fe12",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='Define zero knowledge proofs?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Define zero knowledge proofs?"
+    }, {
+      "id": "2e24ab58-9391-45e7-b386-b318102a8190",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='Define zero knowledge proofs?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d1e8557a-4c22-4fb7-8399-91ee1427e2d4",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='Describe the raft consensys method?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Describe the raft consensys method?"
+    }, {
+      "id": "adffc2f8-13b2-4663-a607-e1c80be57bbf",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='Describe the raft consensys method?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "4f2ed511-ec37-496d-9e6a-63d3592a0239",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca89809a-19bd-4d36-be75-9fe051d3290f",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='In a blockchain what is a block?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "In a blockchain what is a block?"
+    }, {
+      "id": "2029d002-0fe5-483e-95b6-38f9eff94309",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='In a blockchain what is a block?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "03c6c65d-9a67-4a79-aa14-857446fbf318",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is the current value of SUI?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "What is the current value of SUI?"
+    }, {
+      "id": "7f63919b-23a9-4b08-a938-137535274af1",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is the current value of SUI?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "46874008-16a2-4fd2-9456-98621e0b095f",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(13) > .flex",
+      "targets": [
+        ["css=div:nth-child(13) > .flex", "css:finder"],
+        ["xpath=//div[13]/li", "xpath:position"],
+        ["xpath=//li[contains(.,'What is the current value of SUI?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7bd89e6-375f-411b-8c4d-d22b1bfca29d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "337a256a-b760-49ce-9fd3-0d1aa758c2e1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='Who was the first man on the moon?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Who was the first man on the moon?"
+    }, {
+      "id": "9a99f24c-1169-409c-9709-df5d755ab4cd",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='Who was the first man on the moon?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "05f49f7f-f88e-4f4a-b267-36a61ae06942",
+    "name": "Simple-Rag-Tests",
+    "commands": [{
+      "id": "60ff07bd-70cd-4b3d-ad22-5b23dc6258ec",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5a28950-b396-438b-9456-0030d163cfac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1064x803",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe622de4-b19a-403a-bb5a-93202354bb86",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4e17959-ca6f-4f61-9da5-1dac3c6cdcea",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is Ethereum?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "What is Ethereum?"
+    }, {
+      "id": "22641669-bb8d-429d-bb09-66dde8df8bc9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inline-flex",
+      "targets": [
+        ["css=.inline-flex", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "223153bc-3c34-45b8-9785-f7f514e32615",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5241fe95-c71b-4883-bdb1-a54cb0ea6476",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is gas?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "What is gas?"
+    }, {
+      "id": "45e650ca-09d1-41ba-9134-7d4daf4de9e0",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is gas?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "9215f7ba-f8a7-4791-a112-a2ddaa21886f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3401fda8-fecf-4c96-a6b5-4b766e7cc404",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is ']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "What is "
+    }, {
+      "id": "c1eb461b-5ac1-4b4a-b465-282d7bff28af",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is proof of work?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "What is proof of work?"
+    }, {
+      "id": "5c3222e7-a337-4828-901d-a103a256f1e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inline-flex",
+      "targets": [
+        ["css=.inline-flex", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd527d6b-f0bb-4826-86f8-fd43b69dc4dc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "909e77ae-2501-4b1c-8a9c-ac311362d46d",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is cryptography?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "What is cryptography?"
+    }, {
+      "id": "fe880533-f6fc-4a4b-9968-353b68cad799",
+      "comment": "",
+      "command": "click",
+      "target": "css=.inline-flex",
+      "targets": [
+        ["css=.inline-flex", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Submit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5f90ea3d-55e2-4f17-861a-3e3bf3c04d00",
+    "name": "Simple-Non-Rag-Tests",
+    "commands": [{
+      "id": "f43d173c-655c-47c9-87aa-247429a0a455",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "af920063-773e-48e5-ad58-7386d9dd0e00",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1064x804",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "500d3f65-1082-423e-9f39-4d731cbe619b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec01e35c-667d-4de5-8cde-f629463a1d14",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is the raft consensus method?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "What is the raft consensus method?"
+    }, {
+      "id": "97b1909f-d5e1-4c6a-b12a-d059efe76d5e",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='What is the raft consensus method?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "fba1ea1f-4b6f-4b05-b287-50acb8cfcc64",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='Discribe the PBGP ']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Discribe the PBGP "
+    }, {
+      "id": "da020f02-8e8d-4199-bd33-d970132178c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='Discribe the PBGP ']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b21d032-997d-45ed-b41b-de69da98ab65",
+      "comment": "",
+      "command": "type",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='Discribe the Byzantine Generals Problem and what it solves?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Discribe the Byzantine Generals Problem and what it solves?"
+    }, {
+      "id": "ffed6fc8-7142-47dc-b104-eb4003ede650",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.border",
+      "targets": [
+        ["css=.border", "css:finder"],
+        ["xpath=//input[@value='Discribe the Byzantine Generals Problem and what it solves?']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "dc727465-4a6c-4857-a901-8ab556612601",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["06767d3a-74bb-4cd2-b02a-2bf1a9819af7"]
+  }],
+  "urls": ["http://localhost:3000/"],
+  "plugins": []
+}
