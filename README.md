@@ -10,9 +10,9 @@ answer user question based around blockchain terms.
 #### Overview: As a user I want to be able to find the definition of various blockchain terms.
 
 - When I enter a term that is used in the blockchain/web3/cryptocurrency content I want to be provided with its basic definition.
-- If the term is found within the loaded RAG document then that definition will be given to the user
-- If the term is not found within the RAG document then the answer will be provided by OpenAI
-- Any other questions will be answered by the (OpenAI) model. 
+- If the term is found within the loaded RAG document then that definition will be provided to the model in order to give the user an answer
+- If the term is not found within the RAG document then the answer will be provided by the model 
+- Any other unrelated will be answered by the model. 
 
 ### ⚙ Usage
 
@@ -33,12 +33,12 @@ answer user question based around blockchain terms.
 
 ### David Greys Author Links
 
-📺 [YouTube Video](https://youtu.be/YLagvzoWCL0) for this repository.
+📺 [YouTube Video](https://youtu.be/YLagvzoWCL0) for the original base repository.
 ✅ [Check out my YouTube Channel with hundreds of tutorials](https://www.youtube.com/DaveGrayTeachesCode).
 
 ### 🎓 Academic Honesty
 Original base code was forked from David Grey's repository. 
-Code changes have (will be) made to suit another project
+Code changes have (and will be) made to suit another use case.
 
 ### References
 
