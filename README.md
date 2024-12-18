@@ -20,9 +20,18 @@ answer user questions containing blockchain related terms in order to provide de
 - Provide your own .env.local file with an OpenAI API key (OPENAI_API_KEY=<YOUR API KEY>)
 - Install dependencies using the command: npm install
 
-#### To run the web applicaion locally
-- Run the application using the command: run: npm run dev
+#### To run the web application locally
+- Run the application using the command: npm run dev
 - Open a web browser at the following address:  http://localhost:3000
+
+### Documentation - quick demo and some screenshots
+- on the left the IDE showing the contents of the RAG json file 
+- on the right the web browser showing the inputted questions and their answers
+
+  ![Screen Shot 1](/documentation/BlockchainGlossaryAI-Screenshot-1.jpg)
+  ![Screen Shot 2](/documentation/BlockchainGlossaryAI-Screenshot-2.jpg)
+  ![Screen Shot 3](/documentation/BlockchainGlossaryAI-Screenshot-3.jpg)
+  ![Screen Shot 4](/documentation/BlockchainGlossaryAI-Screenshot-4.jpg)
 
 ### To Do
 - [X] Install and run locally
