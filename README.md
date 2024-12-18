@@ -1,25 +1,35 @@
-# Finance Chat Bot with RAG 
-Note - original base code forked from 'Build a RAG Application' by David Grey
+# Blockchain Glossary Chat Bot with RAG 
+Note and disclaimer - this project is based on the original code forked from 'Build a RAG Application' by David Grey
 (https://github.com/gitdagray/nextjs-rag-langchain)
 
-## Using LangChain & Next.js
----
-
 ### Description
+A simple AI chatbot which will use retrieval augmented generation to 
+answer user question based around blockchain terms.  
+
+### Simple Use Case
+#### Overview: As a user I want to be able to find the definition of various blockchain terms.
+
+- When I enter a term that is used in the blockchain/web3/cryptocurrency content I want to be provided with its basic definition.
+- If the term is found within the loaded RAG document then that definition will be given to the user
+- If the term is not found within the RAG document then the answer will be provided by OpenAI
+- Any other questions will be answered by the (OpenAI) model. 
 
 ### ⚙ Usage
 
-- Provide your own .env.local file with an OpenAI API key
+- Provide your own .env.local file with an OpenAI API key (OPENAI_API_KEY=<YOUR API KEY>)
 - npm install
 - npm run dev
 
-#To Do
+### To Do
 - [X] Install and run locally
 - [X] Run with OpenAI
-- [ ] Create RAG finance json data (other project) 
-- [ ] Adapt to load finance data
+- [X] Create RAG crypto glossary document.
+- [ ] Do basic End to End testing (no idea how to write unit or integration tests!)
+- [X] Document
 - [ ] Amend to work locally with the text-generation-webui api 
+- [ ] Add the ability to process PDF documents, turn them into a langchain vector
 
+### Using LangChain & Next.js
 
 ### David Greys Author Links
 

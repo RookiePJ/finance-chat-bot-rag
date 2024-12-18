@@ -26,8 +26,8 @@ export function Chat() {
         <main className="flex flex-col w-full h-screen max-h-dvh bg-background">
 
             <header className="p-4 border-b w-full max-w-3xl mx-auto">
-                <h1 className="text-2xl font-bold">Finance/Crypto AI Chat</h1>
-                <h2 className="text-1xl font-bold">Ask crypto finance question or a glossary of crypto terms</h2>
+                <h1 className="text-2xl font-bold">Blockchain Glossary Chat</h1>
+                <h2 className="text-1xl font-bold">Ask for the definition of a blockchain term</h2>
             </header>
 
             <section className="p-4">

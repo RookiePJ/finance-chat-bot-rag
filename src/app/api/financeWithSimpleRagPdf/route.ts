@@ -1,3 +1,7 @@
+// Currently this sends too many tokens to the LLM model and therefore gives an error
+// TODO - To enable PDF documents to be sent they will need to be split into chunks and then converted into
+// tokens, stored in an in memory (langchain) vector structure.
+
 import {
     Message as VercelChatMessage,
     StreamingTextResponse,
@@ -6,21 +10,24 @@ import {
 import { ChatOpenAI } from '@langchain/openai';
 import { PromptTemplate } from '@langchain/core/prompts';
 import { HttpResponseOutputParser } from 'langchain/output_parsers';
-
-import { JSONLoader } from "langchain/document_loaders/fs/json";
+import { PDFLoader } from '@langchain/community/document_loaders/fs/pdf';
 import { RunnableSequence } from '@langchain/core/runnables'
 import { formatDocumentsAsString } from 'langchain/util/document';
-import { CharacterTextSplitter } from 'langchain/text_splitter';
+import { Document } from "@langchain/core/documents";
 
-//const loader = new JSONLoader(
-//    "src/data/states.json",
-//    ["/state", "/code", "/nickname", "/website", "/admission_date", "/admission_number", "/capital_city", "/capital_url", "/population", "/population_rank", "/constitution_url", "/twitter_url"],
-//);
+const docs = [
+  new Document({
+    pageContent:
+      "Dogs are great companions, known for their loyalty and friendliness.",
+    metadata: { source: "mammal-pets-doc" },
+  }),
+  new Document({
+    pageContent: "Cats are independent pets that often enjoy their own space.",
+    metadata: { source: "mammal-pets-doc" },
+  }),
+];
 
-const loader = new JSONLoader(
-    "src/data/Stochastic-BTC-USD-1d-2009-01-01-2024-12-15.json"
-);
-
+console.log(docs.length)
 
 export const dynamic = 'force-dynamic'
 
@@ -32,7 +39,7 @@ const formatMessage = (message: VercelChatMessage) => {
     return `${message.role}: ${message.content}`;
 };
 
-const TEMPLATE = `Answer the user's questions based on the following context :
+const TEMPLATE = `Answer the user's questions based only on the following context.:
 ==============================
 Context: {context}
 ==============================
@@ -41,38 +48,14 @@ Current conversation: {chat_history}
 user: {question}
 assistant:`;
 
-
 export async function POST(req: Request) {
     try {
         // Extract the `messages` from the body of the request
         const { messages } = await req.json();
-
         const formattedPreviousMessages = messages.slice(0, -1).map(formatMessage);
-
         const currentMessageContent = messages[messages.length - 1].content;
-
         const docs = await loader.load();
-
-        // load a JSON object
-        // const textSplitter = new CharacterTextSplitter();
-        // const docs = await textSplitter.createDocuments([JSON.stringify({
-        //     "state": "Kansas",
-        //     "slug": "kansas",
-        //     "code": "KS",
-        //     "nickname": "Sunflower State",
-        //     "website": "https://www.kansas.gov",
-        //     "admission_date": "1861-01-29",
-        //     "admission_number": 34,
-        //     "capital_city": "Topeka",
-        //     "capital_url": "http://www.topeka.org",
-        //     "population": 2893957,
-        //     "population_rank": 34,
-        //     "constitution_url": "https://kslib.info/405/Kansas-Constitution",
-        //     "twitter_url": "http://www.twitter.com/ksgovernment",
-        // })]);
-
         const prompt = PromptTemplate.fromTemplate(TEMPLATE);
-
         const model = new ChatOpenAI({
             apiKey: process.env.OPENAI_API_KEY!,
             model: 'gpt-3.5-turbo',
@@ -86,11 +69,10 @@ export async function POST(req: Request) {
        * output parser handles serialization and encoding.
        */
         const parser = new HttpResponseOutputParser();
-
         const chain = RunnableSequence.from([
             {
                 question: (input) => input.question,
-                chat_history: (input) => input.chat_history,
+                //chat_history: (input) => input.chat_history,
                 context: () => formatDocumentsAsString(docs),
             },
             prompt,

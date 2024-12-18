@@ -1,3 +1,18 @@
+// A very simple implementation of a json based rag retrieval using the OpenAI llm.
+
+// Uses the langchain library to process a json document that is loaded from the glossary.json file located in the
+// projects data directory.  This file contains two entries, terms and their definitions.
+// The term, if found, is then passed to the model as content along with the conversation history and
+// the users question.
+
+// As an instruction (TEMPLATE) this is all passed with some basic configuration in order to either
+//   - Return an answer from the model based on an term that was found within the rag document
+//   - Return the answer from the model if the term was not found within the rag document
+
+// The conversation history is kept between each of the prompts enabling the model to know conversation content
+
+// Error handling is basic, just catches anything and outputs to the console.
+
 import {
     Message as VercelChatMessage,
     StreamingTextResponse,
@@ -10,8 +25,8 @@ import { HttpResponseOutputParser } from 'langchain/output_parsers';
 import { JSONLoader } from "langchain/document_loaders/fs/json";
 import { RunnableSequence } from '@langchain/core/runnables'
 import { formatDocumentsAsString } from 'langchain/util/document';
-import { CharacterTextSplitter } from 'langchain/text_splitter';
 
+// load the simple json document that contains two elements - term and description
 const loader = new JSONLoader(
     "src/data/glossary.json",
     ["/term", "/description"],
@@ -27,7 +42,9 @@ const formatMessage = (message: VercelChatMessage) => {
     return `${message.role}: ${message.content}`;
 };
 
-const TEMPLATE = `Answer the user's questions based only on the following context:
+// If the answer is not in the rag document then ask the llm to provide the answer
+const TEMPLATE = `You have an in depth knowledge of blockchain technologies and terminology.
+Give detailed answers the to user's questions based on the following context:
 ==============================
 Context: {context}
 ==============================
@@ -35,7 +52,6 @@ Current conversation: {chat_history}
 
 user: {question}
 assistant:`;
-
 
 export async function POST(req: Request) {
     try {

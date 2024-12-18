@@ -1,3 +1,6 @@
+// The very base case, that just passes a question straight to the model
+// not used but left here for debug purposes
+
 import OpenAI from 'openai';
 import { OpenAIStream, StreamingTextResponse } from 'ai';
 

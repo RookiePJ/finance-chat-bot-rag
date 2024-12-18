@@ -1,3 +1,24 @@
+// Original idea was to use financial data taken from yahoo finance API and use it as RAG information to perform a
+// back test of an assert to try and determine future price movement.
+//
+// Historic price data was downloaded and the stochastic technical analysis indicator was applied to generate a buy or
+// sell signal recommencements on a daily timeframe.
+// This was the source of the, now unused, stochastic files in the data directory.
+// Ref my project (https://github.com/RookiePJ/SimpleTechnicalAnalysis) that downloads and then applies this
+//technical analysis.
+
+// This proved to be too ambitious a project and I abandoned this idea due to lack of time and domain (AI) knowledge.
+
+// It appears that there are already pretrained models that do the job better without any use of our RAG data.
+// Example financial models:
+//     1) instruction-pretrain/finance-llama3-8B
+//     2) quantFactory/llama-3-8B-instuct-finance-RAG-GGUF
+// Both models were able to determine historic profits (or losses) of option trades, given dates and strike prices.
+// They also understood various financial instruments (ie Credit Default Swaps).
+// So my conclusion was how are we going to create a better program than that!
+
+// TODO this would still be a potentially good learning exercise
+
 import {
     Message as VercelChatMessage,
     StreamingTextResponse,
